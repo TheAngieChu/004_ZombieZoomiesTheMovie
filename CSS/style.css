@@ -1,0 +1,137 @@
+  /* Overall Design
+  ========================================================================== */
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(darkcloudsbkgd.jpg);
+    background-repeat: repeat;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+ /* Menus Design
+  ========================================================================== */
+  @media only screen and (min-width: 320px) {
+  }
+  
+  @media only screen and (min-width: 480px) {
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .projects-content {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .main-nav {
+      display: block;
+    }
+  
+    .mobile-nav {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      height: calc(100vh - 50px);
+      width: 100%;
+    }
+    
+    .open .mobile-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .mobile-nav li {
+      margin-bottom: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        header nav {
+          display: none;
+        }
+      
+        #hamburger-icon {
+          display: block;
+        }
+      }
+  
+    ul#navigation {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      margin: 0;
+    }
+  
+    ul#navigation li a {
+      color: #f1f1f1;
+      font-family: "Cabin", sans-serif;
+      padding: 6px 12px;
+      border: solid 2px transparent;
+      text-transform: uppercase;
+    }
+  
+    ul#navigation li a:hover {
+      color: #f1f1f1;
+      font-family: "Cabin", sans-serif;
+      padding: 6px 12px;
+      border-bottom: solid 2px #74b44a;
+    }
+  }
+
+
+
+/* Containers Design
+  ========================================================================== */
+
+  .intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .intro-content {
+    background-color: #291e24;
+    color: #cacaca;
+  }
+
+  .description-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
